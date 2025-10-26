@@ -1,0 +1,89 @@
+Recommended Permissive License (Code) and Open Content License (Mathematical Content)
+
+For the software (Python/Rust code) we recommend the Apache License 2.0. This is a widely used permissive license (no copyleft) that allows unrestricted use, modification, and redistribution (including commercial/military use). It explicitly grants rights with attribution and includes a contributor patent license, which is important for security-critical systems
+opensource.stackexchange.com
+. For the mathematical theories and proofs (documentation/content) we recommend the Creative Commons Attribution 4.0 International (CC BY 4.0) license. CC BY 4.0 similarly allows free use and adaptation of the content with only attribution required. Both licenses are suitable for public release in sensitive environments. They do not impose “viral” (copyleft) restrictions, and both include strong disclaimers of warranty and liability.
+
+Apache License 2.0 (Software Code) — Key Sections: This permissive license grants broad rights “to reproduce, prepare derivative works of, publicly display, [and] distribute the Work”
+spdx.org
+. It also grants a patent license to use any contributor’s patents embodied in the work
+spdx.org
+ (terminating if you sue over patents). Redistribution is allowed under mild conditions: you must include a copy of the Apache 2.0 license, mark any modified files, and retain all existing copyright/patent notices
+spdx.org
+. The license expressly disclaims all warranties (“AS IS”)
+spdx.org
+ and limits contributor liability
+spdx.org
+. Importantly, Apache 2.0 is non-copyleft (no requirement to open-source derivative works) and simply requires preserving the license/notice, so it is compatible with closed or open systems
+spdx.org
+spdx.org
+.
+
+Excerpt (Apache 2.0):
+“2. Grant of Copyright License. Subject to the terms... each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare Derivative Works of... the Work…”
+spdx.org
+.
+“3. Grant of Patent License. Subject to the terms... each Contributor hereby grants to You a perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable… patent license to make, have made, use… the Work…”
+spdx.org
+.
+“4. Redistribution. You may reproduce and distribute copies of the Work or Derivative Works… provided that: (a) you give any recipients a copy of this License; (b) modified files carry notices stating that you changed them; (c) you retain in source form all copyright, patent, trademark, and attribution notices…”
+spdx.org
+.
+“7. Disclaimer of Warranty. …Licensor provides the Work… on an ‘AS IS’ BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND…”
+spdx.org
+.
+“8. Limitation of Liability. In no event… shall any Contributor be liable… for any damages… arising out of the use of the Work…”
+spdx.org
+.
+
+Creative Commons BY 4.0 (Mathematical Content) — Key Sections: CC BY 4.0 grants “a worldwide, royalty-free, non-sublicensable, non-exclusive, irrevocable license” to use, reproduce, distribute and adapt the material
+creativecommons.org
+. The only condition is attribution: anyone sharing the material (or adaptations) must credit the original author(s) and include the license. In practice this means retaining the creator’s name, copyright notice, license notice, and a link to the license, and indicating if changes were made
+creativecommons.org
+. CC BY 4.0 also forbids downstream recipients from adding any further restrictions
+creativecommons.org
+, ensuring the work remains open. Like Apache, it disclaims warranties (“AS-IS”)
+creativecommons.org
+ and limits liability
+creativecommons.org
+.
+
+Excerpt (CC BY 4.0):
+“Subject to the terms… the Licensor hereby grants You a worldwide, royalty-free… license to exercise the Licensed Rights in the Licensed Material to: (a) reproduce and Share the Licensed Material… and (b) produce, reproduce, and Share Adapted Material.”
+creativecommons.org
+ (allows commercial use).
+“If You Share the Licensed Material… You must: (a) retain… identification of the creator(s)…; (ii) a copyright notice; (iii) a notice that refers to this Public License; (iv) a notice that refers to the disclaimer of warranties; (v) a URI or hyperlink to the Licensed Material…; (b) indicate if You modified the Licensed Material…; and (c) indicate the Licensed Material is licensed under this Public License, and include the text of, or URI to, this Public License.”
+creativecommons.org
+.
+“UNLESS OTHERWISE… the Licensed Material is offered AS-IS… and makes no representations or warranties of any kind… (including warranties of TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, NON-INFRINGEMENT)…”
+creativecommons.org
+.
+“IN NO EVENT WILL THE LICENSOR BE LIABLE… for any… losses, costs, expenses, or damages… arising out of this Public License or use of the Licensed Material…”
+creativecommons.org
+.
+
+Key Points and Rationale: Both licenses require attribution to the original author (Apache via retaining the license/notice
+spdx.org
+; CC BY by explicitly crediting the author
+creativecommons.org
+). Neither license is copyleft; derivatives may be relicensed (even under proprietary terms) as long as the original license/copyright notice is preserved. We favor Apache 2.0 over MIT because Apache’s explicit patent grant and notice requirements offer clearer protection in defense or security contexts
+opensource.stackexchange.com
+. (MIT is shorter but omits a patent clause, which can create uncertainty in high-security or patented domains
+opensource.stackexchange.com
+.) We avoid GPL or any share-alike license because those viral restrictions are not desired. Similarly, for content we choose CC BY (rather than CC BY-SA) because it has no share-alike clause. We do not use CC0 (no attribution) because credit to the author is required. We avoid NC (non-commercial) or ND (no derivatives) versions since they would forbid legitimate uses (e.g. government or defense use, or future extensions).
+
+Ethical Use Clause: We considered “ethical source” licenses (e.g. the Hippocratic License) that forbid use in human-rights-violating applications
+firstdonoharm.dev
+. For example, the Hippocratic License 2.1 states “The Software shall not be used … for any … activities that violate any Human Rights Laws.”
+firstdonoharm.dev
+. However, such field-of-use restrictions violate the Open Source Definition (Section 6 forbids discrimination against fields of endeavor
+en.wikipedia.org
+) and are not widely accepted in industry. To encourage ethical use without breaking openness, we recommend not adding such clauses to the license itself. Instead, one can publish an ethical use statement or code of conduct alongside the license. In practice, organizations rarely adopt licenses with moral clauses because they complicate compliance. Hence we stick with standard permissive terms, relying on dual-use awareness through documentation rather than legal restrictions.
+
+Sources: We base the above on the official license texts and common licensing guides. For example, open-source experts note that Apache 2.0 “addresses some patent-related issues” and requires keeping license/NOTICE files
+opensource.stackexchange.com
+. The CC BY 4.0 text clearly lists attribution requirements
+creativecommons.org
+ and the AS-IS warranty disclaimers
+creativecommons.org
+. All quoted license sections above are from the official texts
